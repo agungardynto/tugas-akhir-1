@@ -52,7 +52,15 @@
                                     @csrf
 
                                     <div class="modal-body">
-                                        <input type="text" name="nama_pendidikan" id="nama_pendidikan" class="form-control" placeholder="Nama Pendidikan" autocomplete="off">
+                                        <select name="nama_pendidikan" class="custom-select">
+                                            <option value="SD">SD</option>
+                                            <option value="SMP">SMP</option>
+                                            <option value="SMA">SMA</option>
+                                            <option value="D3">D3</option>
+                                            <option value="S1">S1</option>
+                                            <option value="S2">S2</option>
+                                            <option value="S3">S3</option>
+                                        </select>
                                     </div>
                                     <div class="modal-footer justify-content-between">
                                         <button type="submit" class="btn btn-success">Simpan</button>

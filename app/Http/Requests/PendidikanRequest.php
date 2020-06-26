@@ -24,7 +24,7 @@ class PendidikanRequest extends FormRequest
     public function rules()
     {
         return [
-            'nama_pendidikan' => 'required|min:2'
+            'nama_pendidikan' => 'required|min:2|unique:pendidikans,pendidikan'
         ];
     }
 }

@@ -24,7 +24,7 @@ class StatusRequest extends FormRequest
     public function rules()
     {
         return [
-            'nama_status' => 'required'
+            'nama_status' => 'required|unique:statuses,status'
         ];
     }
 }

@@ -52,7 +52,12 @@
                                     @csrf
 
                                     <div class="modal-body">
-                                        <input type="text" name="nama_status" id="nama_status" class="form-control" placeholder="Nama Pendidikan" autocomplete="off">
+                                        <select name="nama_status" class="custom-select">
+                                            <option value="Karyawan Tetap">Karyawan Tetap</option>
+                                            <option value="Magang">Magang</option>
+                                            <option value="Karyawan Kontrak">Karyawan Kontrak</option>
+                                            <option value="Pekerja Paruh Waktu">Pekerja Paruh Waktu</option>
+                                        </select>
                                     </div>
                                     <div class="modal-footer justify-content-between">
                                         <button type="submit" class="btn btn-success">Simpan</button>
